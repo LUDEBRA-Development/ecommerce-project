@@ -19,6 +19,9 @@ export function Header() {
           <Link href='/contact'>Contacto</Link>
         </li>
         <li className='transition duration-300 ease-in-out p-1 rounded hover:text-black hover:bg-gray-300'>
+          <Link href='/about-us'>Sobre Nosotros</Link>
+        </li>
+        <li className='transition duration-300 ease-in-out p-1 rounded hover:text-black hover:bg-gray-300'>
           <Link href='/cart'>
             <IconShoppingCartFilled />
           </Link>
