@@ -24,7 +24,7 @@ export default function Carousel() {
         {Array.from({ length: totalImages }, (_, i) => (
           <SwiperSlide key={i} className=''>
             <Image
-              src={`/source/carousel-${i + 1}.jpg`} //! Cambiar por la ruta de la imagen (No deberia ser source, sino assets en la carpeta public)
+              src={`/assets/images/carousel-${i + 1}.webp`} //! Cambiar por la ruta de la imagen (No deberia ser source, sino assets en la carpeta public)
               alt={`Carousel ${i + 1}`}
               width={1280}
               height={600}
