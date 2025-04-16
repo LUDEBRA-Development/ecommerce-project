@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Carousel from '../components/carousel'
+import { Suspense } from 'react'
 
 export default function Page() {
   return (
@@ -35,7 +36,10 @@ export default function Page() {
         </div>
         {/* Carrusel a la derecha */}
         <div className='w-full'>
-          <Carousel />
+          <Suspense fallback={<div>Cargando...</div>}>
+            {/* Puse este suspense para que la pagina no espere a que se renderice el componente (temas de rendimiento fallback) */}
+            <Carousel />
+          </Suspense>
         </div>
       </div>
     </section>

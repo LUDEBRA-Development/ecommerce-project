@@ -9,6 +9,7 @@ export function Header() {
   const { isLoggedIn, logout } = useAuth()
 
   return (
+    // bg-gray-800
     <div className='w-full h-20 bg-gray-50 flex justify-between items-center flex-row p-8'>
       <Image src='/logo1.png' alt='Logo' width={80} height={80} />
       <ul className='flex flex-row justify-center items-center text-gray-600 gap-3 h-full font-bold'>

@@ -10,12 +10,12 @@ export default function Carousel() {
   const totalImages: number = 19
 
   return (
-    <div className='flex items-center justify-center w-2xl h-[600px]'>
+    <div className='flex items-center justify-center w-full h-[400px]'>
       <Swiper
         navigation
         modules={[Navigation, Autoplay]}
         autoplay={{
-          delay: 3000, // 3 segundos
+          delay: 3000,
           disableOnInteraction: false,
         }}
         loop={true}
@@ -24,10 +24,10 @@ export default function Carousel() {
         {Array.from({ length: totalImages }, (_, i) => (
           <SwiperSlide key={i} className=''>
             <Image
-              src={`/assets/images/carousel-${i + 1}.webp`} //! Cambiar por la ruta de la imagen (No deberia ser source, sino assets en la carpeta public)
+              src={`/assets/images/carousel-${i + 1}.webp`}
               alt={`Carousel ${i + 1}`}
               width={1280}
-              height={600}
+              height={720}
               className='flex justify-center align-center items-center'
             />
           </SwiperSlide>

@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
-import { Header } from './components/Header'
+import { Header } from './components/header'
+import { Footer } from './components/footer'
 import { AuthProvider } from './context/AuthContext'
 import { inter } from './fonts'
 
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className='w-full flex-col'>
               <Header />
               {children}
+              <Footer />
             </div>
           </div>
         </AuthProvider>
