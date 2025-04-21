@@ -10,19 +10,20 @@ export function Header() {
 
   return (
     // bg-gray-800
-    <div className='w-full h-20 bg-gray-50 flex justify-between items-center flex-row p-8'>
+    <div className='w-full h-20 bg-gray-50 flex justify-between items-center flex-row p-8 border-[#6B056E] border-b-2'>
       <Image src='/logo1.png' alt='Logo' width={80} height={80} />
       <ul className='flex flex-row justify-center items-center text-gray-600 gap-3 h-full font-bold'>
-        <li className='transition duration-300 ease-in-out p-1 rounded hover:text-black hover:bg-gray-300'>
+        {/* hover:text-black hover:bg-gray-300 */}
+        <li className='transition duration-300 ease-in-out p-1 rounded hover:text-white hover:bg-[#6B056E]'>
           <Link href='/categories'>Productos</Link>
         </li>
-        <li className='transition duration-300 ease-in-out p-1 rounded hover:text-black hover:bg-gray-300'>
+        <li className='transition duration-300 ease-in-out p-1 rounded hover:text-white hover:bg-[#6B056E]'>
           <Link href='/contact'>Contacto</Link>
         </li>
-        <li className='transition duration-300 ease-in-out p-1 rounded hover:text-black hover:bg-gray-300'>
+        <li className='transition duration-300 ease-in-out p-1 rounded hover:text-white hover:bg-[#6B056E]'>
           <Link href='/about-us'>Sobre Nosotros</Link>
         </li>
-        <li className='transition duration-300 ease-in-out p-1 rounded hover:text-black hover:bg-gray-300'>
+        <li className='transition duration-300 ease-in-out p-1 rounded hover:text-white hover:bg-[#6B056E]'>
           <Link href='/cart'>
             <IconShoppingCartFilled />
           </Link>
@@ -41,10 +42,10 @@ export function Header() {
           </>
         ) : (
           <>
-            <li className='transition duration-300 ease-in-out p-1 rounded hover:text-black hover:bg-gray-300'>
+            <li className='transition duration-300 ease-in-out p-1 rounded hover:text-white hover:bg-[#6B056E]'>
               <Link href='/login'>Iniciar Sesión</Link>
             </li>
-            <li className='transition duration-300 ease-in-out p-1 rounded hover:text-black hover:bg-gray-300'>
+            <li className='transition duration-300 ease-in-out p-1 rounded hover:text-white hover:bg-[#6B056E]'>
               <Link href='/signup'>Registrarse</Link>
             </li>
           </>
