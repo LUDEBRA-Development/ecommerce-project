@@ -11,7 +11,9 @@ export function Header() {
   return (
     // bg-gray-800
     <div className='w-full h-20 bg-gray-50 flex justify-between items-center flex-row p-8 border-[#6B056E] border-b-2'>
-      <Image src='/logo1.png' alt='Logo' width={80} height={80} />
+      <Link href='/'>
+        <Image src='/logo1.png' alt='Logo' width={80} height={80} className='cursor-pointer'/>
+      </Link>
       <ul className='flex flex-row justify-center items-center text-gray-600 gap-3 h-full font-bold'>
         {/* hover:text-black hover:bg-gray-300 */}
         <li className='transition duration-300 ease-in-out p-1 rounded hover:text-white hover:bg-[#6B056E]'>

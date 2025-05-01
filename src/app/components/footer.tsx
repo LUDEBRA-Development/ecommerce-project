@@ -6,8 +6,7 @@ export function Footer() {
     <div className='flex flex-col bg-gray-800 w-full mt-5 border-[#6B056E] border-t-2'>
       <div className='p-4 flex flex-row gap-6'>
         <ul className=' flex flex-col gap-0.5'>
-          <li className='text-gray-400 font-bold hover:text-white cursor-pointer mb-32 flex items-center justify-center'>
-            {/* aqui deberia ir el icono de la aplicacion */}
+          <li className='text-gray-400 font-bold hover:text-white mb-32 flex items-center justify-center'>
             <Image src='/logo1.png' alt='Logo' width={80} height={80} />
           </li>
           <li className='text-gray-400 font-bold'>© 2025 Distr&Arte</li>
